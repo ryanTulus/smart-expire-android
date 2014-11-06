@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/smartexpire_bottom"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/smartexpire_url"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+        	android:contentDescription="@null"
+            android:src="@drawable/bottom_logo" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer">
+	    
+	    <include layout="@layout/card_detail_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="50dp" />
+	    
+	    <ImageView
+	        android:id="@+id/logo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/transparent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="45dp"
+	        android:layout_marginTop="15dp"
+	        android:contentDescription="@null"
+	        android:src="@drawable/smartexpire_logo" />
+    </RelativeLayout>
+</RelativeLayout>

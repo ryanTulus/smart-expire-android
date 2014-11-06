@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/slideup_back" />
+    
+    <ImageButton
+        android:id="@+id/imagebutton_register_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/go_back" />
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imagebutton_register_go_back"
+        android:paddingTop="5dp">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+		    <TextView 
+		        android:id="@+id/register_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="Register Your Account"
+		        android:textColor="@color/dark_grey"
+		        android:textSize="25sp"
+		        android:layout_marginTop="5dp"/>
+		    
+		    <EditText
+			    android:id="@+id/edittext_user_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/register_title"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center_vertical"
+		        android:background="@drawable/custom_label_bar"
+		     	android:inputType="textCapWords"
+		        android:hint="@string/user_name_hint"
+		        android:paddingLeft="10dp"
+		        android:layout_marginTop="30dp" />
+		    
+		    <EditText
+			    android:id="@+id/edittext_pin"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/edittext_user_name"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center_vertical"
+		        android:background="@drawable/custom_label_bar"
+		        android:hint="@string/pin_hint"
+		        android:inputType="numberPassword"
+		        android:paddingLeft="10dp"
+		        android:layout_marginTop="10dp" />
+		    
+		    <EditText
+			    android:id="@+id/edittext_password"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/edittext_pin"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center_vertical"
+		        android:background="@drawable/custom_label_bar"
+		        android:hint="@string/password_hint"
+		        android:inputType="textPassword"
+		        android:paddingLeft="10dp"
+		        android:layout_marginTop="10dp" />
+		    
+			<ImageButton
+			    android:id="@+id/button_register"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:onClick="onRegisterPress"
+		        android:src="@drawable/regdevice"
+		        android:background="@android:color/transparent"
+		        android:layout_below="@id/edittext_password"
+		        android:layout_marginTop="20dp"
+		        android:layout_marginLeft="50dp"
+		        android:layout_marginRight="50dp"
+		        android:layout_marginBottom="10dp"
+		        android:padding="10dp" />
+		
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

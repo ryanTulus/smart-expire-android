@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/slideup_back" />
+    
+    <ImageButton
+        android:id="@+id/imagebutton_scan_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/go_back" />
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imagebutton_scan_go_back"
+        android:paddingTop="5dp">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+		    <ImageView 
+		        android:id="@+id/scan_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/startby_text"
+		        android:layout_marginTop="5dp"/>
+		    
+		    <EditText
+			    android:id="@+id/textview_card_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/scan_title"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center_vertical"
+		        android:inputType="textCapWords"
+		        android:background="@drawable/custom_label_bar"
+		        android:hint="@string/card_name_hint"
+		        android:paddingLeft="10dp"
+		        android:layout_marginTop="10dp" />
+		    
+		    <com.poiseinteractive.smartexpire.extendedUI.ExtendedSpinner 
+		        android:id="@+id/spinner_category"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/textview_card_name"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center_vertical"
+		        android:prompt="@string/select_string"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:background="@drawable/drop_down"
+		        android:layout_marginTop="10dp"/>
+		    
+		    <ImageButton
+		        android:id="@+id/imagebutton_purpose"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/spinner_category"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/forwork_bool"
+		        android:background="@android:color/transparent"
+		        android:layout_marginTop="10dp" />
+		
+			<com.poiseinteractive.smartexpire.extendedUI.ExtendedSpinner
+			    android:id="@+id/spinner_notif_period"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/imagebutton_purpose"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center_vertical"
+		        android:prompt="@string/set_string"
+		        android:paddingLeft="10dp"
+		        android:paddingRight="10dp"
+		        android:background="@drawable/drop_down"
+		        android:layout_marginTop="10dp" />
+			
+			<Button 
+			    android:id="@+id/button_expiry"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/spinner_notif_period"
+			    android:layout_centerHorizontal="true"
+			    android:gravity="center_vertical"
+			    android:background="@drawable/expiry"
+			    android:text="@string/expiry_string"
+			    android:paddingLeft="10dp"
+			    android:paddingRight="60dp"
+		        android:layout_marginTop="10dp" />
+		    
+			<ImageButton
+			    android:id="@+id/imagebutton_save"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/button_expiry"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/savepicture_button"
+		        android:onClick="onPhotoPress"
+		        android:background="@android:color/transparent"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp" />
+		
+		</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

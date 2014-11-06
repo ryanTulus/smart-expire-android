@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/smartexpire_bottom"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/smartexpire_url"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/bottom_logo" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageview_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/smartexpire_logo" />
+
+    <ImageButton
+        android:id="@+id/button_register"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imageview_logo"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:src="@drawable/register" />
+    
+    <TableLayout
+        android:id="@+id/numericPad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:background="@android:color/darker_gray"
+        android:padding="5dip">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="1"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="2"
+                android:textSize="25sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="3"
+                android:textSize="25sp" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="4"
+                android:textSize="25sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="5"
+                android:textSize="25sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="6"
+                android:textSize="25sp" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="7"
+                android:textSize="25sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="8"
+                android:textSize="25sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="9"
+                android:textSize="25sp" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/buttonEmpty"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:textSize="25sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="0"
+                android:textSize="25sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/buttonDeleteBack"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="Delete"
+                android:textSize="25sp" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_password_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numericPad" >
+
+        <ImageView
+            android:id="@+id/imageview_bg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/input_background" />
+
+        <EditText
+            android:id="@+id/input_bar_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageview_bg_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/password_textbar"
+            android:gravity="center_vertical"
+            android:imeOptions="actionGo"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/input_bar_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageview_bg_password"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:id="@+id/pinBox0"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_margin="10dip"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/pinBox1"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_margin="10dip"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/pinBox2"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_margin="10dip"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/pinBox3"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_margin="10dip"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imagebutton_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_password_bar"
+        android:layout_marginLeft="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/pin_button" />
+
+    <ImageButton
+        android:id="@+id/imagebutton_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_password_bar"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/imagebutton_pin"
+        android:background="@android:color/transparent"
+        android:src="@drawable/password_button_select" />
+
+</RelativeLayout>

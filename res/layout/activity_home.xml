@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/smartexpire_bottom"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/smartexpire_url"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+        	android:contentDescription="@null"
+            android:src="@drawable/bottom_logo" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/footer">
+	    
+	    <ImageView
+	        android:id="@+id/logo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/transparent"
+	        android:layout_alignParentLeft="true"
+	        android:contentDescription="@null"
+	        android:layout_marginRight="30dp"
+	        android:src="@drawable/smartexpire_logo" />
+	    
+	    <EditText
+	        android:id="@+id/search"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/logo"
+	        android:background="@drawable/custom_label_bar"
+	        android:hint="@string/search_hint"
+	        android:gravity="center_vertical"
+	        android:inputType="text"
+	        android:imeOptions="actionSearch"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="90dp" />
+	    
+	    <LinearLayout
+	        android:id="@+id/expiries_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/search"
+	        android:layout_marginTop="10dp"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical" >
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/you_have"
+	            android:textSize="20sp"
+	            android:textColor="@color/dark_grey" />
+	        
+	        <TextView 
+	            android:id="@+id/expiries_count"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:textSize="20sp"
+	            android:textColor="@android:color/white"
+	            android:background="@drawable/red"/>
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/expiries"
+	            android:textSize="20sp" 
+	            android:textColor="@color/dark_grey" />
+	        
+	    </LinearLayout>
+	    
+	    <ImageView
+	        android:id="@+id/card_index"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/expiries_info"
+	        android:layout_marginTop="10dp"
+	        android:src="@drawable/card_index" />
+    	
+	    <ListView 
+	        android:id="@+id/card_list"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:layout_marginTop="5dp"
+	        android:layout_below="@id/card_index"
+	        android:divider="@null"
+			android:dividerHeight="0dp" />
+	    
+    </RelativeLayout>
+    
+    <com.poiseinteractive.smartexpire.extendedUI.DynamicImageButton
+        android:id="@+id/slide_to_calendar"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="178dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/calender_slide_tilt" />
+	
+	<com.poiseinteractive.smartexpire.extendedUI.DynamicImageButton
+	    android:id="@+id/slide_to_scan"
+	    android:layout_width="120dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:scaleType="centerInside"
+	    android:adjustViewBounds="true"
+	    android:background="@android:color/transparent"
+	    android:contentDescription="@null"
+	    android:src="@drawable/share_slide_tilt" />
+
+</RelativeLayout>
