@@ -9,7 +9,7 @@ Rest assured, all of your card information will be stored securely on your devic
 - Secure Login Page
 - Creates reminder on your android calendar for every cards.
 - Put up notification on your device when your card is nearly expired.
-- Securely store and display the image of your credit card - it will help you identify your card in the future.
-- Has calendar view installed in the app - you will be able to look at all of your card expiry date on one page.
+- Securely store and display the image of your credit card - it will help you to identify your card in the future.
+- Has calendar view installed in the app - you will be able to view all of your card expiry date on one page.
 
 Enjoy!
